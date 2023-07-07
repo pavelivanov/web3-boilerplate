@@ -1,7 +1,8 @@
 import './globals.css'
+import '@rainbow-me/rainbowkit/styles.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Header, Footer } from '@/components'
+import { Header, Footer, PageLayout } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <PageLayout>
+          <Header />
+          {children}
+          <Footer />
+        </PageLayout>
       </body>
     </html>
   )

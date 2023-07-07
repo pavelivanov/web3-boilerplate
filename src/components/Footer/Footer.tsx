@@ -5,7 +5,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="mt-auto">
-      <div className="container">
+      <div className="container py-2">
         Footer
       </div>
     </footer>

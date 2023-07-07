@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body > [data-rk] {
   @apply flex flex-col min-h-screen;
 }
